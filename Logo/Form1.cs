@@ -39,21 +39,24 @@ namespace Logo
             Refresh();
             countdownBox.Text = "The game will start in: 0"; //it won't actually
             Thread.Sleep(1000);*/ //show the count of zero
-            this.BackColor = Color.DarkBlue;
+            this.BackColor = Color.MidnightBlue;
 
             Refresh(); //the countdown text disappears
             countdownBox.Visible = false;
 
             Graphics formGraphics = this.CreateGraphics();
             Pen drawPen = new Pen(Color.Black, 5);
-            SolidBrush drawBrush = new SolidBrush (Color.Yellow);
-            SolidBrush drawBrush2 = new SolidBrush(Color.DarkBlue);
+            Pen drawPen2 = new Pen(Color.Black, 3);
+            SolidBrush drawBrush = new SolidBrush (Color.FloralWhite);
+            SolidBrush drawBrush2 = new SolidBrush(Color.MidnightBlue);
 
             formGraphics.DrawEllipse(drawPen, 87, 60, 200, 200);
             formGraphics.FillEllipse(drawBrush, 87, 60, 200, 200);
-            formGraphics.FillEllipse(drawBrush2, 91, 80, 150, 150);
-            formGraphics.DrawEllipse(drawPen, 91, 80, 150, 150);
-            Thread.Sleep(1000);
+            formGraphics.FillEllipse(drawBrush2, 85, 80, 150, 150);
+            formGraphics.DrawEllipse(drawPen2, 85, 80, 150, 150);
+            formGraphics.FillRectangle(drawBrush2, 60, 110, 50, 70);
+            formGraphics.FillRectangle(drawBrush, 140, 120, 10, 70);
+            Thread.Sleep(3000);
 
         }
     }
