@@ -55,9 +55,11 @@ namespace Logo
             formGraphics.FillEllipse(drawBrush2, 85, 80, 150, 150);
             formGraphics.DrawEllipse(drawPen2, 85, 80, 150, 150);
             formGraphics.FillRectangle(drawBrush2, 60, 110, 50, 70);
-            formGraphics.FillRectangle(drawBrush, 140, 120, 10, 70);
+
+            Font drawFont = new Font("Segoe Script", 20, FontStyle.Regular);
             Thread.Sleep(3000);
 
+            formGraphics.Clear(Color.White);
         }
     }
 }
