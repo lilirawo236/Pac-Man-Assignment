@@ -49,7 +49,7 @@
             // 
             this.countdownBox.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.countdownBox.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.countdownBox.Location = new System.Drawing.Point(146, 281);
+            this.countdownBox.Location = new System.Drawing.Point(82, 208);
             this.countdownBox.Name = "countdownBox";
             this.countdownBox.Size = new System.Drawing.Size(224, 28);
             this.countdownBox.TabIndex = 1;
@@ -63,7 +63,7 @@
             this.Controls.Add(this.countdownBox);
             this.Controls.Add(this.startButton);
             this.Name = "window1";
-            this.Text = "Christmas!";
+            this.Text = "Play Game";
             this.ResumeLayout(false);
 
         }
